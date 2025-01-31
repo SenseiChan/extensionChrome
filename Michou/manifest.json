@@ -6,11 +6,5 @@
     "permissions": [],
     "chrome_url_overrides": {
         "newtab": "newtab.html"
-    },
-    "web_accessible_resources": [
-        {
-            "resources": ["img/michou1.jpg", "img/michou2.jpg", "img/michou.jpg"],
-            "matches": ["chrome://newtab/"]
-        }
-    ]
+    }
 }
