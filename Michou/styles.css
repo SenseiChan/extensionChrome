@@ -1,0 +1,14 @@
+body {
+    animation: changeBackground 10s infinite linear;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
+@keyframes changeBackground {
+    0% { background-image: url('chrome-extension://__MSG_@@extension_id__/img/michou1.jpg'); }
+    33% { background-image: url('chrome-extension://__MSG_@@extension_id__/img/michou2.jpg'); }
+    66% { background-image: url('chrome-extension://__MSG_@@extension_id__/img/michou.jpg'); }
+    100% { background-image: url('chrome-extension://__MSG_@@extension_id__/img/michou1.jpg'); }
+}
