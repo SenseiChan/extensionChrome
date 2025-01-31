@@ -4,9 +4,6 @@ body {
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-attachment: fixed !important;
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
 }
 
 @keyframes changeBackground {
