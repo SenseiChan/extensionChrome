@@ -2,20 +2,15 @@
     "manifest_version": 3,
     "name": "Fond Michou",
     "version": "1.0",
-    "description": "Ajoute une image de Michou en fond sur Google.fr de manière aléatoire",
+    "description": "Ajoute une image de Michou en fond sur la page d'accueil de Chrome de manière aléatoire.",
     "permissions": [],
-    "host_permissions": ["https://www.google.fr/*"],
-    "content_scripts": [
-      {
-        "matches": ["https://www.google.fr/*"],
-        "css": ["styles.css"]
-      }
-    ],
+    "chrome_url_overrides": {
+        "newtab": "newtab.html"
+    },
     "web_accessible_resources": [
-      {
-        "resources": ["img/michou1.jpg", "img/michou2.jpg", "img/michou.jpg"],
-        "matches": ["https://www.google.fr/*"]
-      }
+        {
+            "resources": ["img/michou1.jpg", "img/michou2.jpg", "img/michou.jpg"],
+            "matches": ["chrome://newtab/"]
+        }
     ]
-  }
-  
+}
